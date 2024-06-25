@@ -21,6 +21,7 @@ from . import views
 from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
+    path("admin/", admin.site.urls),
     path('', views.index, name='index'),
     path('reverse_geocoding/', views.reverse_geocoding, name='reverse_geocoding'),
 ]
